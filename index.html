@@ -17,12 +17,11 @@
 <body>
 
     <header class="container-fluid header">
-        <img class="logo" src="whole.svg" alt="logo">
-        <nav>
+        <img class="logo d-none d-sm-block" src="whole.svg" alt="logo">
+        <nav class="d-none d-sm-block ">
             <div class="container-fluid search-form">
                 <form class="d-flex ">
                     <img class="search-icon" src="search.svg" alt="">
-                    <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
                     <input class="form-control" type="search" placeholder="Search for your favorite groups in ATG" aria-label="Search">
                 </form>
 
@@ -30,7 +29,8 @@
 
         </nav>
         <!-- Button trigger modal -->
-        <a class="btn top-left" data-bs-toggle="modal" data-bs-target="#exampleModal"> Create Account. It's free! <span class="dropdown-toggle"> </span></a>
+        <a class="top-left d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#exampleModal"> Create Account. <spna class="its-free">It's free! </spna><span class="dropdown-toggle"> </span></a>
+
 
         <!-- Modal -->
 
@@ -69,8 +69,49 @@
 
                                 </div>
                                 <div class="col-md-6 mr-auto ">
-                                    <p class="already-acc">Already have an account? <span class="signin-text">Sign In</span></p>
-                                    <img src="modal-vector.svg " alt=" ">
+                                    <p class="already-acc" data-bs-toggle="modal" data-bs-target="#Modal2">Already have an account? <span class="signin-text">Sign In</span></p>
+                                    <img class="d-none d-sm-block" src="modal-vector.svg " alt=" ">
+                                    <p class="terms ">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2-->
+
+        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="form-header">Sign In</h2>
+                                    <form>
+                                        <div class="">
+                                            <input type="email " class="form-control1 " placeholder="Email " id="exampleInputEmail1 ">
+
+                                            <div class=" ">
+                                                <input type="password " class="form-control1 " id="myInput " placeholder="Password ">
+                                            </div>
+                                        </div>
+                                        <button type="submit " class="mt-3 btn btn-create-acc ">Create Account</button>
+                                    </form>
+                                    <button type="submit " class="mt-3 btn btn-fb "><img src="facebook.svg "> Sign up with Facebook</button>
+                                    <button type="submit " class="mt-3 btn btn-google "><img src="google.svg "> Sign up with Google</button>
+
+                                </div>
+                                <div class="col-md-6 mr-auto ">
+                                    <p class="create-acc">Don’t have an account yet? <span class="signin-text"> Create new for free!</span></p>
+                                    <img class="d-none d-sm-block" src="modal-vector.svg " alt=" ">
                                     <p class="terms ">By signing up, you agree to our Terms & conditions, Privacy policy</p>
                                 </div>
                             </div>
@@ -83,6 +124,10 @@
     </header>
 
     <div class="container ">
+        <div class="d-flex justify-content-between pt-3 d-block d-sm-none ">
+            <i class="fas fa-arrow-left"></i>
+            <a class="btn btn-outline-join text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Join Group</a>
+        </div>
         <div class="heading ">
             <h2>Computer Engineering</h2>
             <p>142,765 Computer Engineers follow this</p>

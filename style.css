@@ -47,6 +47,34 @@ a {
     color: #5C5C5C;
 }
 
+.top-left {
+    min-height: 21px;
+    left: 1161px;
+    top: 27px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: right;
+    color: #2E2E2E;
+    ;
+    cursor: pointer;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: right;
+    color: #2E2E2E;
+}
+
+.its-free {
+    color: #2F6CE5
+}
+
 .form-control {
     width: 40vw !important;
     flex: 1;
@@ -122,6 +150,23 @@ a {
     padding-top: 40px;
 }
 
+.btn-outline-join {
+    width: 105px;
+    height: 40px;
+    left: 266px !important;
+    top: 38px;
+    border: 0.8px solid #FFFFFF !important;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.fa-arrow-left {
+    left: 16.67%;
+    right: 16.67%;
+    top: 16.67%;
+    bottom: 16.67%;
+}
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     border-color: none !important;
@@ -164,6 +209,10 @@ a {
     border-radius: 8px;
 }
 
+.modal-content {
+    min-height: 513px;
+}
+
 .modal-header {
     background: #EFFFF4;
     border-radius: 8px 8px 0px 0px;
@@ -181,10 +230,10 @@ a {
 }
 
 .btn-close {
-    left: 8.33%;
-    right: 8.33%;
-    top: 8.33%;
-    bottom: 8.33%;
+    left: 8.33% !important;
+    right: 8.33% !important;
+    top: 8.33% !important;
+    bottom: 8.33% !important;
     background: transparent url(close.svg) center/1em auto no-repeat !important;
 }
 
@@ -313,6 +362,21 @@ a {
     text-align: right;
     color: #3D3D3D;
     cursor: pointer;
+}
+
+.create-acc {
+    width: 280px;
+    height: 17px;
+    left: 772px;
+    top: 267px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: right;
+    color: #3D3D3D;
 }
 
 .signin-text {
