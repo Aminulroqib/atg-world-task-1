@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 30px 20%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+a {
+    color: #2E2E2E !important;
+    text-decoration: none !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.search-form {
+    display: flex;
+    flex: 1;
+    background: #F2F2F2;
+    border-radius: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5C5C5C;
+}
+
+.form-control {
+    width: 40vw !important;
+    flex: 1;
+    height: 10px !important;
+    border-radius: 21px !important;
+    border: none !important;
+    padding: 1.375rem !important;
+    background: #F2F2F2 !important;
+    outline: none !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.container {
+    max-width: 100% !important;
+    height: 440px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(./computer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.heading {
+    position: relative;
+    width: 378px;
+    min-height: 10vh;
+    left: 10vw;
+    top: 310px;
+    padding-bottom: 20vw;
+}
+
+.tabs-bar {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 0px;
+    left: 200px;
+    top: 600px;
+    border: 1px solid #E0E0E0;
+}
+
+.btn-write {
+    width: 11vw;
+    height: 36px;
+    left: 966px;
+    top: 552px;
+    background: #EDEEF0 !important;
+    border-radius: 4px;
+}
+
+.btn-join {
+    width: 125px;
+    height: 36px;
+    background: #2F6CE5 !important;
+    border-radius: 4px;
+    left: 0%;
+    right: 0%;
+    top: 20.83%;
+    bottom: 25%;
+}
+
+.btn-class {
+    padding-top: 40px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: none !important;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    left: 220px;
+    top: 1032px;
+    background: url(sarthak.png);
+    border-radius: 24px;
+}
+
+.rectangle {
+    width: 42px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background: #EDEEF0;
+    border-radius: 2px;
+    background-image: url(share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news-card {
+    padding: 40px;
+}
+
+.card {
+    margin: 40px;
+}
+
+.modal-dialog {
+    max-width: 736px !important;
+    height: 513px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.modal-header {
+    background: #EFFFF4;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.modal-title {
+    align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    text-align: center;
+    color: #008A45;
+}
+
+.btn-close {
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 8.33%;
+    background: transparent url(close.svg) center/1em auto no-repeat !important;
+}
+
+.btn-create-acc {
+    width: 320px;
+    height: 40px;
+    left: 388px;
+    top: 515px;
+    background: #2F6CE5 !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+
+.form-control1 {
+    width: 100%;
+    height: 46px;
+    left: 388px;
+    top: 360px;
+    background: #F7F8FA;
+    border: 1px solid #D9D9DB;
+    box-sizing: border-box;
+    padding: .375rem .75rem;
+    appearance: none
+}
+
+.btn-fb {
+    display: flex;
+    background: url(facebook.svg);
+    width: 320px;
+    height: 38px;
+    left: 388px;
+    top: 579px;
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB !important;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.btn-google {
+    width: 320px;
+    height: 38px;
+    left: 388px;
+    top: 625px;
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB !important;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.terms {
+    width: 317px;
+    height: 16px;
+    left: 735px;
+    top: 647px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height, or 145% */
+    text-align: right;
+    letter-spacing: -0.008em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.input-group-append {
+    position: absolute;
+    left: 31.25%;
+    right: 31.25%;
+    background: #DADADA;
+}
+
+.eye {
+    position: absolute;
+    left: 40.25%;
+    right: 31.25%;
+    top: 38.25%;
+    bottom: 31.25%;
+    cursor: pointer;
+}
+
+.form-header {
+    width: 173px;
+    height: 31px;
+    left: 388px;
+    top: 260px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.form-row {
+    display: flex;
+    box-sizing: border-box !important;
+}
+
+.form-row1 {
+    width: 50% !important;
+    display: flex;
+    flex: 1;
+    box-sizing: border-box !important;
+}
+
+.form-row2 {
+    width: 50% !important;
+    display: flex;
+    flex: 1;
+    box-sizing: border-box !important;
+}
+
+.already-acc {
+    width: 195px;
+    height: 17px;
+    left: 857px !important;
+    top: 267px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: right;
+    color: #3D3D3D;
+    cursor: pointer;
+}
+
+.signin-text {
+    color: #2F6CE5;
+}
