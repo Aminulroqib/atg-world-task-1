@@ -93,7 +93,7 @@ a {
 .container {
     max-width: 100% !important;
     height: 440px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(./computer.png);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(images/computer.png);
     background-position: center;
     background-repeat: no-repeat;
     color: #FFFFFF;
@@ -181,7 +181,7 @@ a {
     height: 48px;
     left: 220px;
     top: 1032px;
-    background: url(sarthak.png);
+    background: url(images/sarthak.svg);
     border-radius: 24px;
 }
 
@@ -192,7 +192,7 @@ a {
     justify-content: center;
     background: #EDEEF0;
     border-radius: 2px;
-    background-image: url(share.svg);
+    background-image: url(images/share.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -250,7 +250,7 @@ a {
     right: 8.33% !important;
     top: 8.33% !important;
     bottom: 8.33% !important;
-    background: transparent url(close.svg) center/1em auto no-repeat !important;
+    background: transparent url(images/close.svg) center/1em auto no-repeat !important;
 }
 
 .btn-create-acc {
@@ -277,7 +277,7 @@ a {
 
 .btn-fb {
     display: flex;
-    background: url(facebook.svg);
+    background: url(images/facebook.svg);
     width: 320px;
     height: 38px;
     left: 388px;
@@ -453,6 +453,7 @@ a {
     top: 274px;
     background: #F1F3F5 !important;
     border-radius: 4px !important;
+    cursor: pointer;
 }
 
 .address-field {
@@ -525,4 +526,11 @@ a {
     line-height: 19px;
     /* identical to box height */
     color: #000000;
+}
+
+.person-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
 }
