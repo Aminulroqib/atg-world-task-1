@@ -136,9 +136,13 @@ a {
 }
 
 .btn-join {
+    display: inline-block;
+    margin-left: 2px;
     width: 125px;
     height: 36px;
     background: #2F6CE5 !important;
+    padding: 6px 2px;
+    border: none;
     border-radius: 4px;
     left: 0%;
     right: 0%;
@@ -193,8 +197,20 @@ a {
     background-position: center;
 }
 
-.news-card {
-    padding: 40px;
+@media only screen and (min-width: 768px) {
+    .news-card {
+        margin-left: 180px;
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 82vw!important;
+        left: 0px !important;
+        background: #FFFFFF !important;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12) !important;
+    }
 }
 
 .card {
@@ -219,7 +235,7 @@ a {
 }
 
 .modal-title {
-    align: center;
+    align-items: center !important;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -307,13 +323,48 @@ a {
     background: #DADADA;
 }
 
-.eye {
-    position: absolute;
-    left: 40.25%;
-    right: 31.25%;
-    top: 38.25%;
-    bottom: 31.25%;
-    cursor: pointer;
+@media only screen and (min-width: 768px) {
+    .eye {
+        position: absolute;
+        left: 40.17%;
+        right: 4.17%;
+        top: 34.75%;
+        bottom: 18.75%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .eye {
+        position: absolute;
+        left: 78.17%;
+        right: 4.17%;
+        top: 32.75%;
+        bottom: 18.75%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .eye2 {
+        position: absolute;
+        left: 40.17%;
+        right: 4.17%;
+        top: 24.75%;
+        bottom: 18.75%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .eye2 {
+        position: absolute;
+        left: 78.17%;
+        right: 4.17%;
+        top: 26.75%;
+        bottom: 18.75%;
+        cursor: pointer;
+    }
 }
 
 .form-header {
@@ -353,7 +404,8 @@ a {
     height: 17px;
     left: 857px !important;
     top: 267px;
-    font-family: IBM Plex Sans;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -369,7 +421,8 @@ a {
     height: 17px;
     left: 772px;
     top: 267px;
-    font-family: IBM Plex Sans;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -377,8 +430,99 @@ a {
     /* identical to box height */
     text-align: right;
     color: #3D3D3D;
+    cursor: pointer;
 }
 
 .signin-text {
     color: #2F6CE5;
+}
+
+.posts {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #212529;
+}
+
+.btn-fill {
+    width: 106px !important;
+    height: 32px !important;
+    left: 236px;
+    top: 274px;
+    background: #F1F3F5 !important;
+    border-radius: 4px !important;
+}
+
+.address-field {
+    margin-top: 40px;
+}
+
+.address-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 0.4px solid #B8B8B8;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.fa-map-marker-alt {
+    position: absolute;
+    left: 65%;
+    right: 39.58%;
+    top: 124%;
+    bottom: 52.08%;
+}
+
+.fa-pen {
+    position: absolute;
+    left: 94.5%;
+    right: 12.49%;
+    top: 124%;
+    bottom: 12.5%;
+}
+
+.btn-visit {
+    width: 30vw;
+    align-items: center;
+    height: 38px;
+    left: 220px;
+    top: 1956px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 0.7px dashed #A9AEB8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    color: #E56135;
+}
+
+.btn-timesjobs {
+    width: 30vw;
+    align-items: center;
+    height: 38px;
+    left: 220px;
+    top: 1956px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 0.7px dashed #A9AEB8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    color: #02B875;
+}
+
+.text-job {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #000000;
 }
