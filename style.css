@@ -6,17 +6,19 @@
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
-    padding: 30px 20%;
+@media only screen and (min-width: 768px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+        padding: 30px 20%;
+    }
 }
 
 .logo {
@@ -90,7 +92,7 @@ a {
     box-shadow: none !important;
 }
 
-.container {
+.comp-img {
     max-width: 100% !important;
     height: 440px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url(images/computer.png);
@@ -103,13 +105,68 @@ a {
     position: relative;
 }
 
-.heading {
-    position: relative;
-    width: 378px;
-    min-height: 10vh;
-    left: 10vw;
-    top: 310px;
-    padding-bottom: 20vw;
+@media only screen and (min-width: 768px) {
+    .heading {
+        position: relative;
+        width: 378px;
+        height: 47px;
+        left: -57px;
+        top: -68px;
+    }
+    .comp-text {
+        position: absolute;
+        width: 378px;
+        height: 47px;
+        left: 200px;
+        top: 358px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 47px;
+    }
+    .comp-text-p {
+        position: absolute;
+        width: 327px;
+        height: 23px;
+        left: 200px;
+        top: 409px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        position: absolute;
+        width: 179px;
+        height: 22px;
+        left: 16px;
+        top: 188px;
+    }
+    .comp-text {
+        position: absolute;
+        width: 179px !important;
+        height: 22px;
+        left: 16px;
+        top: 188px !important;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .comp-text-p {
+        position: absolute;
+        width: 218px;
+        height: 16px;
+        left: 16px;
+        top: 212px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 
 .tabs-bar {
@@ -185,37 +242,199 @@ a {
     border-radius: 24px;
 }
 
-.rectangle {
-    width: 42px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    background: #EDEEF0;
-    border-radius: 2px;
-    background-image: url(images/share.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 @media only screen and (min-width: 768px) {
-    .news-card {
-        margin-left: 180px;
-        padding: 40px;
+    .card {
+        position: absolute;
+        width: 692px !important;
+        height: 492px !important;
+        left: 200px !important;
+        background: #FFFFFF !important;
+        border: 1px solid #E0E0E0 !important;
+        border-radius: 4px !important;
+        margin-top: 20px;
+        padding: 2px;
+    }
+    .card-title {
+        width: 600px;
+        height: 60px;
+        left: 220px;
+        top: 903px;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .card-text {
+        width: 652px;
+        height: 25px;
+        left: 220px;
+        top: 975px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 134.17%;
+        /* or 25px */
+        color: #5C5C5C;
+    }
+    .person-name {
+        display: flex;
+        height: 24px;
+        left: 278px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+        white-space: nowrap;
+    }
+    .img-foot {
+        width: 37px;
+        height: 37px;
+        left: 16px;
+        top: 576px;
+        background: url(34794700_1874631512587221_8232276447465570304_o.jpg);
+        border-radius: 24px;
+    }
+    .views {
+        width: -1px;
+        height: 18px;
+        left: 695px;
+        top: 1047px;
+    }
+    .rectangle {
+        width: 42px;
+        height: 36px;
+        left: 830px;
+        top: 1038px;
+        align-items: center;
+        justify-content: center;
+        background: #EDEEF0;
+        border-radius: 2px;
+        background-image: url(images/share.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .location-element {
+        margin-right: 205px;
+        width: 243px !important;
+        height: 0px;
+        left: 997px;
+        top: 685px;
+    }
+    .hello {
+        position: absolute;
+        width: 77px;
+        height: 18px;
+        left: 1019px;
+        top: 656px;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .address-input {
+        position: absolute;
+        width: 243px;
+        height: 0px;
+        left: 997px;
+        top: 685px;
+        border: 0.4px solid #B8B8B8;
+    }
+    .exclaim-text {
+        width: 220px;
+        height: 32px;
+        left: 1020px;
+        top: 717px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        opacity: 0.5;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .card {
-        width: 82vw!important;
-        left: 0px !important;
-        background: #FFFFFF !important;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12) !important;
+        position: absolute;
+        max-width: 100%;
+        width: 360px;
+        height: 375px;
+        left: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+        margin-top: 40px;
+    }
+    .card-title {
+        display: flex;
+        width: 280px;
+        height: 42px;
+        left: 16px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #212529;
+    }
+    .card-text {
+        width: 324px;
+        height: 18px;
+        left: 16px;
+        top: 537px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #495057;
+    }
+    .person-name {
+        display: flex;
+        width: -1 px;
+        height: 17px;
+        left: 65px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .img-foot {
+        width: 37px;
+        height: 37px;
+        left: 16px;
+        top: 576px;
+        background: url(34794700_1874631512587221_8232276447465570304_o.jpg);
+        border-radius: 24px;
+    }
+    .views {
+        width: -1px;
+        height: 16px;
+        left: 65px;
+        top: 595px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height */
+        color: #495057;
+    }
+    .rectangle {
+        width: 70px;
+        height: 36px;
+        left: 272px;
+        top: 577px;
+        background: #F1F3F5;
+        border-radius: 4px;
+    }
+    .rect-share {
+        display: inline-block;
+        background: url(images/share.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
-.card {
-    margin: 40px;
-}
+@media only screen and (max-width: 600px) {}
 
 .modal-dialog {
     max-width: 736px !important;
@@ -460,33 +679,12 @@ a {
     margin-top: 40px;
 }
 
-.address-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 0.4px solid #B8B8B8;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-}
-
 .fa-map-marker-alt {
-    position: absolute;
-    left: 65%;
-    right: 39.58%;
-    top: 124%;
-    bottom: 52.08%;
+    margin-left: -18px;
 }
 
 .fa-pen {
-    position: absolute;
-    left: 94.5%;
-    right: 12.49%;
-    top: 124%;
-    bottom: 12.5%;
+    margin-left: 163px;
 }
 
 .btn-visit {
@@ -526,11 +724,4 @@ a {
     line-height: 19px;
     /* identical to box height */
     color: #000000;
-}
-
-.person-name {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 23px;
 }

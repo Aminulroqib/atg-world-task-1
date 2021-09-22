@@ -117,14 +117,14 @@
         </div>
     </header>
 
-    <div class="container ">
+    <div class="container comp-img img-overlay">
         <div class="d-flex justify-content-between pt-3 d-block d-sm-none ">
             <i class="fas fa-arrow-left"></i>
             <a class="btn btn-outline-join text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Join Group</a>
         </div>
         <div class="heading ">
-            <h2>Computer Engineering</h2>
-            <p>142,765 Computer Engineers follow this</p>
+            <h2 class="comp-text">Computer Engineering</h2>
+            <p class="comp-text-p">142,765 Computer Engineers follow this</p>
         </div>
         <div class="color-overlay "></div>
 
@@ -166,27 +166,29 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid ">
-        <div class="row ">
-            <div class="col-6 news-card ">
-                <div class="card ">
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <!-- <div class="col-lg-2"></div> -->
+            <div class="">
+                <div class="card">
                     <img src="images/article-img.png " class="card-img-top " alt="... ">
                     <div class="card-body ">
                         <p>✍️ Article</p>
                         <div class="d-flex justify-content-between ">
-                            <h5 class="card-title ">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                            <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
                             <img src="images/dots.svg " alt=" ">
                         </div>
-                        <p class="card-text ">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                        <div class="d-flex justify-content-between mt-5 ">
-                            <p class="person-name"> <img src="images/sarthak.svg " alt=" "> Sarthak Kamra</p>
-                            <p> <img src="images/eye.svg "> 1.4k views</p>
+                        <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                        <div class="d-flex justify-content-between mt-5 card-foot">
+                            <h3 class="person-name"> <img class="img-foot" src="images/sarthak.svg " alt=" "> Sarthak Kamra</h3>
+                            <p class="views"> <img src="images/eye.svg "> 1.4k views</p>
                             <div class="rectangle ">
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card ">
+                <div class="card">
                     <img src="images/education.png " class="card-img-top " alt="... ">
                     <div class="card-body ">
                         <p>🔬️ Education</p>
@@ -194,9 +196,9 @@
                             <h5 class="card-title ">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
                             <img src="images/dots.svg " alt=" ">
                         </div>
-                        <p class="card-text ">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                        <p class="card-text mt-3">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
                         <div class="d-flex justify-content-between mt-5 ">
-                            <p class="person-name"> <img src="images/sarah.svg " alt=" "> Sarah West</p>
+                            <p class="person-name"> <img class="img-foot" src="images/sarah.svg " alt=" "> Sarah West</p>
                             <p> <img src="images/eye.svg "> 1.4k views</p>
                             <div class="rectangle ">
                             </div>
@@ -211,14 +213,14 @@
                             <h5 class="card-title mb-2">Finance & Investment Elite Social Mixer @Lujiazui</h5>
                             <img src="images/dots.svg " alt=" ">
                         </div>
-                        <div class="d-flex justify-content-between mt-3">
+                        <div class="d-flex justify-content-between">
                             <h3 class="text-job"><i class="far fa-calendar"></i> Fri, 12 Oct, 2018</h3>
                             <h3 class="text-job"><i class="fas fa-map-marker"></i> Ahmedabad, India</h3>
 
                         </div>
-                        <button class="btn-visit mt-3">Visit Website</button>
-                        <div class="d-flex justify-content-between mt-5 ">
-                            <p class="person-name"> <img src="images/ronal.svg " alt=" "> Ronal Jones</p>
+                        <button class="btn-visit mt-3 mb-3">Visit Website</button>
+                        <div class="d-flex justify-content-between">
+                            <p class="person-name"> <img class="img-foot" src="images/ronal.svg " alt=" "> Ronal Jones</p>
                             <p> <img src="images/eye.svg "> 1.4k views</p>
                             <div class="rectangle ">
                             </div>
@@ -241,7 +243,7 @@
                         </div>
                         <button class="btn-timesjobs mt-3">Apply on Timesjobs</button>
                         <div class="d-flex justify-content-between mt-5 ">
-                            <p class="person-name"> <img src="images/joseph.svg " alt=" "> Joseph Gray</p>
+                            <p class="person-name"> <img class="img-foot" src="images/joseph.svg " alt=" "> Joseph Gray</p>
                             <p> <img src="images/eye.svg "> 1.4k views</p>
                             <div class="rectangle ">
                             </div>
@@ -249,39 +251,39 @@
 
                     </div>
                 </div>
+                <div class="d-none d-sm-block">
+                    <i class="fas fa-map-marker-alt hello "></i>
+                    <p class="hello">Noida, India</p>
+                    <span class="address-input"></span>
+                    <i class="fas fa-pen hello"></i>
+                    <p class="exclaim-text hello"><i class="fas fa-exclamation-circle"></i> Your location will help us serve better and extend a personalised experience.</p>
+                </div>
+
+
             </div>
-            <div class="col-4 mt-5 d-none d-sm-block">
-                <form class="d-flex address-field">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input class="address-input" type="text" id="fname" placeholder="Noida, India">
-                    <i class="fas fa-pen"></i>
-                </form>
-                <p class="mt-5"><i class="fas fa-exclamation-circle"></i> Your location will help us serve better and extend a personalised experience.</p>
-            </div>
+
         </div>
 
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myInput");
-            if (x.type === "password ") {
-                x.type = "text ";
-            } else {
-                x.type = "password ";
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password ") {
+                    x.type = "text ";
+                } else {
+                    x.type = "password ";
+                }
             }
-        }
 
-        function myFunction2() {
-            var x = document.getElementById("myInput2");
-            if (x.type === "password ") {
-                x.type = "text ";
-            } else {
-                x.type = "password ";
+            function myFunction2() {
+                var x = document.getElementById("myInput2");
+                if (x.type === "password ") {
+                    x.type = "text ";
+                } else {
+                    x.type = "password ";
+                }
             }
-        }
-    </script>
+        </script>
 
 
 </body>
